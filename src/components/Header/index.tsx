@@ -23,7 +23,7 @@ export function Header() {
     setIsOpen(false);
   };
   return (
-    <div className="w-full flex justify-around items-center z-50 py-6 lg:px-24 sm:px-12 px-2">
+    <div className="container mx-auto max-w-6xl px-4 flex justify-around items-center z-50 py-6">
       <div className="cursor-pointer w-56 md:w-96">
         <a href="/">
           <Image src={Logo} alt="Logo Rafael Prutende deputado federal" />

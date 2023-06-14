@@ -9,7 +9,7 @@ import Abraco from '../../../assets/abraco.png'
 
 export function Trajetoria() {
   return (
-    <div className="py-20">
+    <div className="py-20 ">
       <h2 className="text-laranja-1 text-6xl font-bold pb-12">Trajetória</h2>
       <div className="flex">
         <Swiper

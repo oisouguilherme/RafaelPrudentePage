@@ -7,9 +7,9 @@ import { Trajetoria } from "@/components/HomePage/Trajetoria";
 export function HomePage(){
 
   return(
-    <div>
+    <div className="bg-gray-100">
       <Main/>
-      <div className="px-2 md:px-24 lg:px-36 bg-gray-100">
+      <div className="container mx-auto max-w-6xl px-4">
         <Trajetoria/>
         <Compromissos/>
       </div>

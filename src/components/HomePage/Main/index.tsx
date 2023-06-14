@@ -7,7 +7,7 @@ import Link from "next/link";
 
 export function Main(){
   return(
-    <div className="flex flex-col items-center relative bg-gray-100 -z-20">
+    <div className="flex flex-col items-center relative bg-gray-100 -z-0">
       <Image src={Banner} alt="Banner" className="w-full"/>
 
       <p className="text-laranja-1 text-xl text-center uppercase py-20">Pai de família, cristão e trabalhador incansável</p>
