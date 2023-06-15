@@ -1,16 +1,17 @@
 "use client";
 
 import { useState } from "react";
-import Image from "next/image";
-import Logo from "../../assets/Icons/logo.svg";
 import Link from "next/link";
-import Instagram from '../../assets/Icons/instagram.svg'
-import Facebook from '../../assets/Icons/facebook.svg'
-import Twitter from '../../assets/Icons/twitter.svg'
-import SocialLink from '../../assets/Icons/socialLink.svg'
-import Youtube from '../../assets/Icons/youtube.svg'
-import Whatsapp from '../../assets/Icons/whatsapp.svg'
 
+import {
+  SocialMediaFacebook,
+  SocialMediaInstagram,
+  SocialMediaThreePoints,
+  SocialMediaTwitter,
+  SocialMediaWhatsapp,
+  SocialMediaYouTube,
+} from "@/assets/Icons/IconsSocialMedia";
+import { IconsUtilLogoOrange } from "@/assets/Icons/IconsUtils";
 
 export function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -26,7 +27,7 @@ export function Header() {
     <div className="container mx-auto max-w-6xl px-4 flex justify-around items-center z-50 py-6">
       <div className="cursor-pointer w-56 md:w-96">
         <a href="/">
-          <Image src={Logo} alt="Logo Rafael Prutende deputado federal" />
+          <IconsUtilLogoOrange />
         </a>
       </div>
       <div className="lg:hidden">
@@ -57,58 +58,47 @@ export function Header() {
           </ul>
         </div>
       </div>
-      <div className="hidden lg:flex items-center justify-between w-full">
-
+      <div className="hidden lg:flex gap-4 items-center justify-between w-full">
         <ul className="flex gap-6 font-bold text-[#818181]">
           <li className="cursor-pointer">
-            <a href="/">Sobre</a>
+            <a href="/sobre">Sobre</a>
           </li>
-          <li className="cursor-pointer">
-            Noticias
-          </li>
-          <li className="cursor-pointer">
-            Artigos
-          </li>
-          <li className="cursor-pointer">
-            Compromisos
-          </li>
-          <li className="cursor-pointer">
-            Downloads
-          </li>
-          <li className="cursor-pointer">
-            Contato
-          </li>
+          <li className="cursor-pointer">Noticias</li>
+          <li className="cursor-pointer">Artigos</li>
+          <li className="cursor-pointer">Compromisos</li>
+          <li className="cursor-pointer">Downloads</li>
+          <li className="cursor-pointer">Contato</li>
         </ul>
 
         <ul className="flex gap-6 items-center">
           <li>
             <Link href={""}>
-              <Image src={Instagram} alt="Instagram" />
+              <SocialMediaInstagram />
             </Link>
           </li>
           <li>
             <Link href={""}>
-              <Image src={Facebook} alt="Facebook" />
+              <SocialMediaFacebook />
             </Link>
           </li>
           <li>
             <Link href={""}>
-              <Image src={Youtube} alt="Youtube" />
+              <SocialMediaYouTube />
             </Link>
           </li>
           <li>
             <Link href={""}>
-              <Image src={SocialLink} alt="SocialLink" />
+              <SocialMediaThreePoints />
             </Link>
           </li>
           <li>
             <Link href={""}>
-              <Image src={Twitter} alt="Twitter" />
+              <SocialMediaTwitter />
             </Link>
           </li>
           <li>
             <Link href={""}>
-              <Image src={Whatsapp} alt="Whatsapp" />
+              <SocialMediaWhatsapp />
             </Link>
           </li>
         </ul>

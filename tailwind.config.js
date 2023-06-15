@@ -11,6 +11,9 @@ module.exports = {
         laranja: {
           1: '#FF6500',
         },
+        azul: {
+          1: '#22365D',
+        },
       }
     },
   },

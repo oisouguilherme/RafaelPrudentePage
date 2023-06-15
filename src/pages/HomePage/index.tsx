@@ -1,7 +1,13 @@
+"use client";
+
+import { Header } from "@/components/Header";
+import { Amigos } from "@/components/HomePage/Amigos";
 import { Compromissos } from "@/components/HomePage/Compromissos";
+import { FooterHome } from "@/components/HomePage/FooterHome";
 import { Main } from "@/components/HomePage/Main";
 import { RedesSociais } from "@/components/HomePage/RedesSociais";
 import { Trajetoria } from "@/components/HomePage/Trajetoria";
+import { UltimasNoticas } from "@/components/HomePage/UltimasNoticas";
 
 
 export function HomePage(){
@@ -9,11 +15,12 @@ export function HomePage(){
   return(
     <div className="bg-gray-100">
       <Main/>
-      <div className="container mx-auto max-w-6xl px-4">
-        <Trajetoria/>
-        <Compromissos/>
-      </div>
+      <Trajetoria/>
+      <Compromissos/>
       <RedesSociais/>
+      <UltimasNoticas/>
+      <Amigos/>
+      <FooterHome/>
     </div>
   )
 }
