@@ -1,15 +1,12 @@
 import Image from "next/image";
 import SobreImage from "../../assets/sobreImage.png";
 import { MsgSmile } from "@/assets/Icons/IconsMsg";
+import { TitleHeader } from "../Utils/TitleHeader";
 
 export function Main() {
   return (
     <div>
-      <div className="bg-laranja-1 ">
-        <h2 className="mx-auto max-w-6xl px-4 text-4xl sm:text-6xl text-white font-bold py-11">
-          Sobre
-        </h2>
-      </div>
+      <TitleHeader title="Sobre" />
       <div className="flex gap-8 flex-wrap justify-center lg:justify-between mx-auto max-w-6xl px-4 pt-16">
         <div className="max-w-md relative">
           <Image src={SobreImage} alt="Imagem de rafael" />

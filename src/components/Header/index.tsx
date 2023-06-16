@@ -61,11 +61,17 @@ export function Header() {
       <div className="hidden lg:flex gap-4 items-center justify-between w-full">
         <ul className="flex gap-6 font-bold text-[#818181]">
           <li className="cursor-pointer">
-            <a href="/sobre">Sobre</a>
+            <Link href="/sobre">Sobre</Link>
           </li>
-          <li className="cursor-pointer">Noticias</li>
-          <li className="cursor-pointer">Artigos</li>
-          <li className="cursor-pointer">Compromisos</li>
+          <li className="cursor-pointer">
+            <Link href="/noticias">Noticias</Link>
+          </li>
+          <li className="cursor-pointer">
+            <Link href="/artigos">Artigos</Link>
+          </li>
+          <li className="cursor-pointer">
+            <Link href="/compromisso">Compromisos</Link>
+          </li>
           <li className="cursor-pointer">Downloads</li>
           <li className="cursor-pointer">Contato</li>
         </ul>
