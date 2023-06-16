@@ -21,7 +21,7 @@ export default function UnicoArtigo() {
         </div>
         <Link
           href={""}
-          className="text-laranja-1 text-lg w-fit mx-auto font-bold py-4 px-20 sm:px-32 border-2 rounded-full"
+          className="text-laranja-1 text-lg w-fit mx-auto font-bold py-4 px-20 sm:px-32 border-2 rounded-full duration-300 hover:scale-105"
         >
           Mais artigos
         </Link>

@@ -10,8 +10,10 @@ export function Trajetoria() {
   return (
     <div className="pb-20 mx-auto max-w-6xl">
       <SlideCompleto/>
-      <Image src={Abraco} alt="Rafael Prudente abraçando o povo" className="hidden sm:block"/>
-      <Image src={AbracoMobile} alt="Rafael Prudente abraçando o povo" className=" sm:hidden w-full"/>
+      <div className="px-4">
+        <Image src={Abraco} alt="Rafael Prudente abraçando o povo" className="hidden sm:block"/>
+        <Image src={AbracoMobile} alt="Rafael Prudente abraçando o povo" className=" sm:hidden w-full"/>
+      </div>
     </div>
   );
 }

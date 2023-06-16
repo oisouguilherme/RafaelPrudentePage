@@ -14,7 +14,7 @@ export function CompromissoCard({children, style, styleButton, title}:any) {
         pharetra porta.
       </p>
 
-      <Link className={`${styleButton} border-2 border-laranja-1 text-laranja-1 px-6 py-1 rounded-full text-xs font-bold`} href={"/compromisso/unicocompromisso"}>Veja mais</Link>
+      <Link className={`${styleButton} border-2 border-laranja-1 text-laranja-1 px-6 py-1 rounded-full text-xs font-bold hover:text-white hover:border-white hover:bg-laranja-1 hover:scale-105 duration-300`} href={"/compromisso/unicocompromisso"}>Veja mais</Link>
     </div>
   );
 }

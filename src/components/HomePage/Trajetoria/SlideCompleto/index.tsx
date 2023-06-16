@@ -15,21 +15,21 @@ export function SlideCompleto(){
             clickable: true,
           }}
           breakpoints={{
-            340: {
+            400: {
               slidesPerView: 2,
-              spaceBetween: 300,
+              spaceBetween: 200,
             },
             520: {
               slidesPerView: 2,
-              spaceBetween: 150,
+              spaceBetween: 100,
             },
-            648: {
+            700: {
               slidesPerView: 3,
-              spaceBetween: 250,
-            },
-            930: {
-              slidesPerView: 4,
               spaceBetween: 300,
+            },
+            900: {
+              slidesPerView: 3,
+              spaceBetween: 10,
             },
           }}
         >

@@ -25,7 +25,7 @@ export function Main(){
           <h2 className="font-bold text-6xl">Rafael Prudente</h2>
           <p className="text-sm">Nascido em Brasília, é filho de pai goiano e mãe pernambucana, é casado com Pollyanna Vaz Prudente e tem dois filhos, Rafael e Samuel. Formado em Administração de Empresas, iniciou cedo a sua vida profissional. Eleito em 2014, Rafael Prudente está no segundo mandato de Deputado Distrital. O Deputado é o atual Presidente da Câmara Legislativa do Distrito Federal e está no comando do Poder Legislativo do DF desde 2018. RAFAEL PRUDENTE também é o presidente do MDB-DF.</p>
 
-          <Link href="#" className="border-2 border-white py-2 px-6 rounded-full">Veja mais</Link>
+          <Link href="#" className="border-2 border-white py-2 px-6 rounded-full hover:scale-105 duration-300">Veja mais</Link>
         </div>
         <div className="flex w-full flex-col gap-16 items-end">
           <iframe className="w-full sm:w-[600px] xl:w-[659px] h-64 md:h-[370px]" src="https://www.youtube.com/embed/cyyMZnx8nAU" title="Monitoramento do uso de EPI&#39;s com Visão Computacional" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>

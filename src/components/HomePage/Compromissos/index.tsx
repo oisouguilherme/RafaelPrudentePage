@@ -16,19 +16,19 @@ export function Compromissos(){
             <IconsUtilTrabalho/>
             <p className='hidden md:block'>Trabalho</p>
           </button>
-          <button className='flex items-center gap-6 w-12 sm:w-24 md:w-64 h-12 sm:h-16 md:h-20 border-2 px-2 sm:p-8 rounded-2xl text-xl font-bold active:bg-laranja-1 active:text-white'>
+          <button className='flex items-center gap-6 w-12 sm:w-24 md:w-64 h-12 sm:h-16 md:h-20 border-2 px-2 sm:p-8 rounded-2xl text-xl font-bold'>
             <IconsUtilSeguranca/>
             <p className='hidden md:block'>Segurança Pública</p>
           </button>
-          <button className='flex items-center gap-6 w-12 sm:w-24 md:w-64 h-12 sm:h-16 md:h-20 border-2 px-2 sm:p-8 rounded-2xl text-xl font-bold active:bg-laranja-1 active:text-white'>
+          <button className='flex items-center gap-6 w-12 sm:w-24 md:w-64 h-12 sm:h-16 md:h-20 border-2 px-2 sm:p-8 rounded-2xl text-xl font-bold'>
             <IconsUtilImposto/>
             <p className='hidden md:block'>Impostos</p>
           </button>
-          <button className='flex items-center gap-6 w-12 sm:w-24 md:w-64 h-12 sm:h-16 md:h-20 border-2 px-2 sm:p-8 rounded-2xl text-xl font-bold active:bg-laranja-1 active:text-white'>
+          <button className='flex items-center gap-6 w-12 sm:w-24 md:w-64 h-12 sm:h-16 md:h-20 border-2 px-2 sm:p-8 rounded-2xl text-xl font-bold'>
             <IconsUtilEconomia/>
             <p className='hidden md:block'>Economia</p>
           </button>
-          <button className='flex items-center gap-6 w-12 sm:w-24 md:w-64 h-12 sm:h-16 md:h-20 border-2 px-2 sm:p-8 rounded-2xl text-xl font-bold active:bg-laranja-1 active:text-white'>
+          <button className='flex items-center gap-6 w-12 sm:w-24 md:w-64 h-12 sm:h-16 md:h-20 border-2 px-2 sm:p-8 rounded-2xl text-xl font-bold'>
             <IconsUtilSocial/>
             <p className='hidden md:block'>Social</p>
           </button>
@@ -44,7 +44,7 @@ export function Compromissos(){
               <p className='font-bold'>CRIAÇÃO DO MINISTÉRIO DO EMPREGO E QUALIFICAÇÃO PROFISSIONAL</p>
               <p>O Novo Ministério teria como meta reduzir o desemprego no país e promover programas para qualificar nossos trabalhadores.</p>
             </div>
-            <Link href="#" className='py-3 px-8 border-2 text-laranja-1 rounded-full font-bold'>Veja mais</Link>
+            <Link href="/compromisso" className='py-3 px-8 border-2 text-laranja-1 hover:scale-105 duration-300 rounded-full font-bold'>Veja mais</Link>
           </div>
 
           

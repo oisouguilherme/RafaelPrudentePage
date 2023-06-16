@@ -8,6 +8,7 @@ import {
   IconsUtilSocial,
   IconsUtilTrabalho,
 } from "@/assets/Icons/IconsUtils";
+
 export function CompromissoMain() {
   return (
     <div className="max-w-6xl mx-auto py-10 px-4 md:px-0">

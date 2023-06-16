@@ -1,6 +1,6 @@
 import { Footer } from "@/components/Footer";
-import { ProjetosPrincipais } from "@/components/UnicoCompromisso/ProjetosPrincipais";
-import { UnicoCompromissoMain } from "@/components/UnicoCompromisso/UnicoCompromissoMain";
+import { ProjetosPrincipais } from "@/components/Compromissos/ProjetosPrincipais";
+import { UnicoCompromissoMain } from "@/components/Compromissos/UnicoCompromissoMain";
 import { TitleHeader } from "@/components/Utils/TitleHeader";
 
 export default function Unicocompromisso(){

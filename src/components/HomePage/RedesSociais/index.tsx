@@ -29,7 +29,7 @@ export function RedesSociais() {
           </p>
           <a
             href="#"
-            className="bg-green-500 flex gap-3 py-3 px-6 font-bold rounded-full"
+            className="bg-green-500 hover:bg-green-600 duration-300 flex gap-3 py-3 px-6 font-bold rounded-full"
           >
             <SocialMediaWhatsappTransparent/>
             Whats do Rafael
@@ -61,7 +61,7 @@ export function RedesSociais() {
             <MsgTwitter />
           </Link>
         </div>
-        <p className="text-xs">
+        <p className="text-xs px-4">
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry.Lorem Ipsum has been the industry's standard dummy text ever
           since the 1500
