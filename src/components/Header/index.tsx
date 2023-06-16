@@ -26,9 +26,9 @@ export function Header() {
   return (
     <div className="container mx-auto max-w-6xl px-4 flex justify-around items-center z-50 py-6">
       <div className="cursor-pointer w-56 md:w-96">
-        <a href="/">
+        <Link href="/">
           <IconsUtilLogoOrange />
-        </a>
+        </Link>
       </div>
       <div className="lg:hidden">
         <div
@@ -72,8 +72,12 @@ export function Header() {
           <li className="cursor-pointer">
             <Link href="/compromisso">Compromisos</Link>
           </li>
-          <li className="cursor-pointer">Downloads</li>
-          <li className="cursor-pointer">Contato</li>
+          <li className="cursor-pointer">
+            <Link href="/downloads">Downloads</Link>
+          </li>
+          <li className="cursor-pointer">
+            <Link href="/contato">Contato</Link>
+          </li>
         </ul>
 
         <ul className="flex gap-6 items-center">

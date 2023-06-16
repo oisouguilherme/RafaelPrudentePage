@@ -1,12 +1,11 @@
-import { IconsUtilTrabalho } from "@/assets/Icons/IconsUtils";
 import Link from "next/link";
 
-export function CompromissoCard() {
+export function CompromissoCard({children, style, styleButton, title}:any) {
   return (
-    <div className="max-w-[355px] h-[339px] bg-laranja-1  shadow-md shadow-laranja-1 text-white p-6 sm:p-8 rounded-xl space-y-6 flex flex-col items-start">
-      <div className="flex gap-4">
-        <IconsUtilTrabalho />
-        <h2 className="font-bold text-xl">Trabalho</h2>
+    <div className={`${style} max-w-[355px] h-[339px] shadow-md border-2 p-6 sm:p-8 rounded-xl space-y-6 flex flex-col items-start`}>
+      <div className="flex gap-4 items-center">
+        {children}
+        <h2 className="font-bold text-xl">{title}</h2>
       </div>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
@@ -15,7 +14,7 @@ export function CompromissoCard() {
         pharetra porta.
       </p>
 
-      <Link className="border-2 px-6 py-1 rounded-full text-xs font-bold" href={""}>Veja mais</Link>
+      <Link className={`${styleButton} border-2 border-laranja-1 text-laranja-1 px-6 py-1 rounded-full text-xs font-bold`} href={"/compromisso/unicocompromisso"}>Veja mais</Link>
     </div>
   );
 }
