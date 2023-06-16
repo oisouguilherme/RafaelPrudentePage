@@ -1,6 +1,5 @@
 "use client";
 
-import { Header } from "@/components/Header";
 import { Amigos } from "@/components/HomePage/Amigos";
 import { Compromissos } from "@/components/HomePage/Compromissos";
 import { FooterHome } from "@/components/HomePage/FooterHome";
@@ -10,7 +9,7 @@ import { Trajetoria } from "@/components/HomePage/Trajetoria";
 import { UltimasNoticas } from "@/components/HomePage/UltimasNoticas";
 
 
-export function HomePage(){
+export default function HomePage(){
 
   return(
     <div className="bg-gray-100">
