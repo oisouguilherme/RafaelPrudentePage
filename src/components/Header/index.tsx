@@ -32,30 +32,82 @@ export function Header() {
       </div>
       <div className="lg:hidden">
         <div
-          className={`fixed top-0 left-0 right-0 bottom-0 bg-black opacity-50 ${
+          className={`fixed top-0 left-0 right-0 bottom-0 z-10 bg-black opacity-50 ${
             isOpen ? "block" : "hidden"
           }`}
           onClick={toggleMenu}
         ></div>
         <div
-          className={`fixed top-0 right-0 bottom-0 bg-white w-64 transform transition-transform ease-in-out duration-300 ${
+          className={`fixed top-0 right-0 bottom-0 bg-white z-10 w-64 transform transition-transform ease-in-out duration-300 ${
             isOpen ? "translate-x-0" : "translate-x-full"
           }`}
         >
-          <ul className="p-4 space-y-4">
-            <li className="cursor-pointer font-bold hover:text-vermelho duration-300">
-              <a href="/">Home</a>
-            </li>
-            <li className="cursor-pointer font-bold hover:text-vermelho duration-300">
-              Bebidas
-            </li>
-            <li className="cursor-pointer font-bold hover:text-vermelho duration-300">
-              Carnes e Porções
-            </li>
-            <li className="cursor-pointer font-bold hover:text-vermelho duration-300">
-              Outros
-            </li>
-          </ul>
+          <div className="flex flex-col h-screen justify-around items-center">
+            <ul className="flex flex-col items-center gap-6 font-bold text-2xl text-[#818181]">
+              <li className="cursor-pointer hover:text-laranja-1">
+                <Link onClick={closeMenu} href="/">
+                  Home
+                </Link>
+              </li>
+              <li className="cursor-pointer hover:text-laranja-1">
+                <Link onClick={closeMenu} href="/sobre">
+                  Sobre
+                </Link>
+              </li>
+              <li className="cursor-pointer hover:text-laranja-1">
+                <Link onClick={closeMenu} href="/noticias">
+                  Noticias
+                </Link>
+              </li>
+              <li className="cursor-pointer hover:text-laranja-1">
+                <Link onClick={closeMenu} href="/artigos">
+                  Artigos
+                </Link>
+              </li>
+              <li className="cursor-pointer hover:text-laranja-1">
+                <Link onClick={closeMenu} href="/compromisso">
+                  Compromisos
+                </Link>
+              </li>
+              <li className="cursor-pointer hover:text-laranja-1">
+                <Link onClick={closeMenu} href="/downloads">
+                  Downloads
+                </Link>
+              </li>
+              <li className="cursor-pointer hover:text-laranja-1">
+                <Link onClick={closeMenu} href="/contato">
+                  Contato
+                </Link>
+              </li>
+            </ul>
+            <ul className="flex gap-4 items-center">
+              <li>
+                <Link href={""}>
+                  <SocialMediaInstagram />
+                </Link>
+              </li>
+              <li>
+                <Link href={""}>
+                  <SocialMediaFacebook />
+                </Link>
+              </li>
+              <li>
+                <Link href={""}>
+                  <SocialMediaYouTube />
+                </Link>
+              </li>
+              <li>
+                <Link href={""}>
+                  <SocialMediaThreePoints />
+                </Link>
+              </li>
+              <li>
+                <Link href={""}>
+                  <SocialMediaTwitter />
+                </Link>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
       <div className="hidden lg:flex gap-4 items-center justify-between w-full">
