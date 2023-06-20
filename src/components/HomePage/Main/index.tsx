@@ -10,7 +10,7 @@ export function Main(){
   return(
     <div className="flex flex-col items-center relative -z-0">
 
-      <p className="text-laranja-1 text-xl text-center uppercase py-8 sm:pb-20" data-aos="fade-left">Pai de família, cristão e trabalhador incansável</p>
+      <p className="text-laranja-1 text-xl text-center uppercase py-8 sm:py-20" data-aos="fade-left">Pai de família, cristão e trabalhador incansável</p>
 
       <Image src={Mission} alt="Missoes" className="hidden sm:block px-4" data-aos="fade-right"/>
       <Image src={MissionMobile} alt="Banner" className="w-full sm:hidden px-4" data-aos="fade-right"/>

@@ -13,9 +13,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-BR">
-      <body>
-        <Header/>
-        {children}
+      <body className="relative">
+        <div className='gsap-scroll'>
+          <Header/>
+            {children}
+        </div>
       </body>
     </html>
   )

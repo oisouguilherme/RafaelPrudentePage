@@ -6,41 +6,48 @@ import Image from "next/image";
 import { ScrollTrigger } from "gsap/all";
 
 export function Animation() {
-  const triggerRef = useRef(null);
-  const triggeredElementRef = useRef(null);
-  const triggerRef2 = useRef(null);
-  const triggeredElementRef2 = useRef(null);
+  const triggerRef = useRef<any>(null);
+  const triggerRef2 = useRef<any>(null);
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
-    gsap.to(triggeredElementRef.current, {
+
+    gsap.to(triggerRef.current, {
       scrollTrigger: {
-        trigger: triggerRef.current,
+        trigger: ".gsap-scroll",
         start: "top top",
-        pin: true,
-        scrub: true,
-        end: 300,
+        pin: ".gsap-scroll",
+        markers: false,
+        scrub: 1,
+        end: 10,
       },
       opacity: 0,
     });
-    gsap.from(triggeredElementRef2.current, {
+    gsap.from(triggerRef2.current, {
       scrollTrigger: {
-        trigger: triggerRef2.current,
+        trigger: ".gsap-scroll",
         start: "top top",
-        pin: true,
-        scrub: true,
-        end: 300,
+        pin: ".gsap-scroll",
+        markers: false,
+        scrub: 1,
+        end: 10,
       },
       opacity: 0,
     });
-  });
+  }, []);
 
   return (
-    <div className="banner-main relative h-fit">
-      <div ref={triggerRef}>
-        <Image ref={triggeredElementRef} src={TesteImage} alt="" className="w-full" />
-      </div>
-      <div ref={triggerRef2} className="absolute top-0 w-full">
-        <Image ref={triggeredElementRef2} src={ImagemBannerMain} alt="" className="w-full"/>
+    <div>
+      <div className=" relative">
+        <div>
+          <Image
+            className="max-h-full w-full absolute top-0"
+            src={TesteImage}
+            alt=""
+          />
+        </div>
+        <div ref={triggerRef} className="relative">
+          <Image src={ImagemBannerMain} className="w-full" alt="Rafael Prudente Trabalha pelo DF" />
+        </div>
       </div>
     </div>
   );
