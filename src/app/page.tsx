@@ -11,10 +11,12 @@ import { Animation } from "@/components/Utils/Animations";
 import { AnimationMobile } from "@/components/Utils/AnimationsMobile";
 import { useEffect, useState } from "react";
 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 export default function Home() {
   const [larguraPagina, setLarguraPagina] = useState(0);
-
+  AOS.init();
   useEffect(() => {
     setLarguraPagina(window.innerWidth);
     

@@ -6,7 +6,6 @@ import Link from "next/link";
 
 import { IconsUtilThreeHearts } from "@/assets/Icons/IconsUtils";
 
-
 export function Main(){
   return(
     <div className="flex flex-col items-center relative -z-0">
