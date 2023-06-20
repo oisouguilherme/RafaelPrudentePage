@@ -13,9 +13,11 @@ import { useEffect, useState } from "react";
 
 
 export default function Home() {
-  const [larguraPagina, setLarguraPagina] = useState(window.innerWidth);
+  const [larguraPagina, setLarguraPagina] = useState(0);
 
   useEffect(() => {
+    setLarguraPagina(window.innerWidth);
+    
     function handleResize() {
       setLarguraPagina(window.innerWidth);
     }

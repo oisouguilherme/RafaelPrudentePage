@@ -30,7 +30,7 @@ export function Main(){
           </div>
         </div>
 
-        <div className="absolute bg-laranja-1 w-full h-1/3 bottom-64 left-0 lg:w-1/2 lg:h-1/3 lg:bottom-0 lg:left-0 -z-10"/>
+        <div className="absolute bg-laranja-1 w-full h-1/2 bottom-64 left-0 lg:w-1/2 lg:bottom-0 lg:left-0 -z-10"/>
 
       </div>
     </div>
