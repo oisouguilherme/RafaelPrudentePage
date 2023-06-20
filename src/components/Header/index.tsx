@@ -133,32 +133,32 @@ export function Header() {
         </ul>
 
         <ul className="flex gap-6 items-center">
-          <li>
+          <li className="hover:scale-110 duration-300">
             <Link href={""}>
               <SocialMediaInstagram />
             </Link>
           </li>
-          <li>
+          <li className="hover:scale-110 duration-300">
             <Link href={""}>
               <SocialMediaFacebook />
             </Link>
           </li>
-          <li>
+          <li className="hover:scale-110 duration-300">
             <Link href={""}>
               <SocialMediaYouTube />
             </Link>
           </li>
-          <li>
+          <li className="hover:scale-110 duration-300">
             <Link href={""}>
               <SocialMediaThreePoints />
             </Link>
           </li>
-          <li>
+          <li className="hover:scale-110 duration-300">
             <Link href={""}>
               <SocialMediaTwitter />
             </Link>
           </li>
-          <li>
+          <li className="hover:scale-110 duration-300">
             <Link href={""}>
               <SocialMediaWhatsapp />
             </Link>

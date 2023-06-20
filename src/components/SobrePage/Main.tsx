@@ -7,7 +7,7 @@ export function Main() {
   return (
     <div>
       <TitleHeader title="Sobre" />
-      <div className="flex gap-8 flex-wrap justify-center lg:justify-between mx-auto max-w-6xl px-4 pt-16">
+      <div data-aos="fade-up" className="flex gap-8 flex-wrap justify-center lg:justify-between mx-auto max-w-6xl px-4 pt-16">
         <div className="max-w-md relative">
           <Image src={SobreImage} alt="Imagem de rafael" />
           <div className="absolute bottom-48 -right-9 hidden md:block">

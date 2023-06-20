@@ -1,4 +1,3 @@
-
 import { ArtigoMain } from "@/components/ArtigosPage/ArtigoMain";
 import { Footer } from "@/components/Footer";
 import { TitleHeader } from "@/components/Utils/TitleHeader";

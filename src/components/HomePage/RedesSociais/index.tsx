@@ -15,7 +15,7 @@ import { SocialMediaWhatsappTransparent } from "@/assets/Icons/IconsSocialMedia"
 
 export function RedesSociais() {
   return (
-    <div className="flex flex-col gap-12 lg:gap-0 lg:flex-row pb-20 bg-gray-100">
+    <div data-aos="fade-down" className="flex flex-col gap-12 lg:gap-0 lg:flex-row pb-20 bg-gray-100">
       <div className="bg-laranja-1 lg:max-w-4xl py-16 px-2 xl:px-20 relative lg:rounded-e-3xl overflow-hidden xl:overflow-visible">
         <div className="text-white rounded-xl border-2 p-10 flex flex-col gap-6 items-center xl:items-start">
           <div className="absolute top-10">

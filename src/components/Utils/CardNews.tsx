@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export function CardNews({title,paragraph}:any){
   return(
-    <div className='sm:w-80 bg-white rounded-xl'>
+    <div data-aos="zoom-in" className='sm:w-80 bg-white rounded-xl'>
       <Link href={"/noticias/unicanoticia"}>
         <Image src={Rafael} alt='Imagem da noticia' className='w-full'/>
         <div className='p-6 space-y-4'>

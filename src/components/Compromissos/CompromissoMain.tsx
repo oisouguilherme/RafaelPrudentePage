@@ -12,7 +12,7 @@ import {
 export function CompromissoMain() {
   return (
     <div className="max-w-6xl mx-auto py-10 px-4 md:px-0">
-      <div className="relative">
+      <div className="relative" data-aos="zoom-in-left">
         <p className="absolute max-w-md top-20 left-16 text-white hidden lg:block">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
           vulputate iaculis felis, in luctus augue luctus nec. Etiam convallis

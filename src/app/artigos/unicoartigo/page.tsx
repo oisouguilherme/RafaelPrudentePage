@@ -1,3 +1,4 @@
+'use client'
 import { ArtigoBody } from "@/components/ArtigosPage/ArtigoBody";
 import { Footer } from "@/components/Footer";
 import { TitleHeader } from "@/components/Utils/TitleHeader";
@@ -5,7 +6,14 @@ import { UltimasNoticas } from "@/components/HomePage/UltimasNoticas";
 import { ArtigoCard } from "@/components/ArtigosPage/ArtigoCard";
 import Link from "next/link";
 
+import AOS from "aos";
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
+
 export default function UnicoArtigo() {
+  useEffect(() => {
+    AOS.init();
+  }, [])
   return (
     <div className="bg-gray-100">
       <TitleHeader title="Artigo" />

@@ -11,8 +11,14 @@ import { Animation } from "@/components/Utils/Animations";
 import { AnimationMobile } from "@/components/Utils/AnimationsMobile";
 import { useEffect, useState } from "react";
 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 export default function Home() {
+  useEffect(() => {
+    AOS.init();
+  }, [])
+  
   const [larguraPagina, setLarguraPagina] = useState(window.innerWidth);
 
   useEffect(() => {

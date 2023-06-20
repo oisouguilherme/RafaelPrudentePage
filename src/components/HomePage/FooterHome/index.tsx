@@ -15,7 +15,7 @@ import Link from "next/link";
 export function FooterHome() {
   return (
     <div className="bg-azul-1 pt-20">
-      <div className="flex flex-wrap justify-center md:justify-between items-center space-y-8 px-3 md:px-0">
+      <div data-aos="fade-up-right" className="flex flex-wrap justify-center md:justify-between items-center space-y-8 px-3 md:px-0">
         <div className="text-white text-center sm:text-start space-y-8 w-full sm:max-w-xs mx-auto px-4 flex flex-col items-center sm:items-start">
           <h2 className="text-4xl font-bold">
             Precisa de informações ou tem sugestões?
@@ -43,7 +43,7 @@ export function FooterHome() {
             </Link>
           </div>
         </div>
-        <div className="bg-white p-7 md:p-16 w-full md:w-1/2 rounded-xl md:rounded-l-2xl">
+        <div data-aos="fade-up-left" className="bg-white p-7 md:p-16 w-full md:w-1/2 rounded-xl md:rounded-l-2xl">
           <div className="max-w-sm space-y-8">
             <h2 className="text-3xl sm:text-4xl font-bold text-laranja-1">
               Me chame para conversarmos!

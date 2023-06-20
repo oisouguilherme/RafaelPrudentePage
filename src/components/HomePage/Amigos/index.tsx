@@ -6,7 +6,7 @@ import { CardAmigos } from "./CardAmigos";
 
 export function Amigos() {
   return (
-    <div className="container mx-auto max-w-6xl px-4 pb-20 space-y-20">
+    <div  className="container mx-auto max-w-6xl px-4 pb-20 space-y-20">
       <div className="flex gap-4 flex-wrap items-center md:justify-between">
         <h2 className="text-laranja-1 text-4xl md:text-6xl font-bold">
           Amigos
