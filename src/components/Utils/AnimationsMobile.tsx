@@ -1,11 +1,11 @@
 import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
-import TesteImage from "../../assets/abraco.png";
-import ImagemBannerMain from "../../assets/bannerMain.png";
+import ImagemTesteMobile from "../../assets/abracoMobile.png";
+import ImagemBannerMobile from "../../assets/mainBannerMobile.png";
 import Image from "next/image";
 import { ScrollTrigger } from "gsap/all";
 
-export function Animation() {
+export function AnimationMobile() {
   const triggerRef = useRef(null);
   const triggeredElementRef = useRef(null);
   const triggerRef2 = useRef(null);
@@ -18,7 +18,7 @@ export function Animation() {
         start: "top top",
         pin: true,
         scrub: true,
-        end: 300,
+        end: 850,
       },
       opacity: 0,
     });
@@ -28,7 +28,7 @@ export function Animation() {
         start: "top top",
         pin: true,
         scrub: true,
-        end: 300,
+        end: 800,
       },
       opacity: 0,
     });
@@ -37,10 +37,10 @@ export function Animation() {
   return (
     <div className="banner-main relative">
       <div ref={triggerRef}>
-        <Image ref={triggeredElementRef} src={TesteImage} alt="" className="w-full" />
+        <Image ref={triggeredElementRef} src={ImagemTesteMobile} alt="" className="w-full" />
       </div>
       <div ref={triggerRef2} className="absolute top-0 w-full">
-        <Image ref={triggeredElementRef2} src={ImagemBannerMain} alt="" className="w-full"/>
+        <Image ref={triggeredElementRef2} src={ImagemBannerMobile} alt="" className="w-full"/>
       </div>
     </div>
   );
