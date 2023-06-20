@@ -11,7 +11,7 @@ export function Compromissos(){
     <div className='pb-20 mx-auto max-w-6xl px-4'>
       <h2 className='text-laranja-1 text-4xl md:text-6xl font-bold pb-8 md:pb-16'>Compromissos</h2>
       <div className='flex flex-col md:flex-row gap-8'>
-        <div className='md:space-y-4 flex justify-around md:flex-col'>
+        <div className='md:space-y-4 flex justify-around md:flex-col' data-aos="fade-right">
           <button className='flex items-center gap-6 w-12 sm:w-24 md:w-64 h-12 sm:h-16 md:h-20 bg-laranja-1 px-3 sm:p-8 rounded-2xl text-xl text-white font-bold'>
             <IconsUtilTrabalho/>
             <p className='hidden md:block'>Trabalho</p>
@@ -34,7 +34,7 @@ export function Compromissos(){
           </button>
         </div>
 
-        <div className='bg-white p-8 sm:p-16 rounded-2xl w-full flex flex-col justify-between items-start relative overflow-hidden xl:overflow-visible'>
+        <div className='bg-white p-8 sm:p-16 rounded-2xl w-full flex flex-col justify-between items-start relative overflow-hidden xl:overflow-visible' data-aos="fade-left">
           <div className='max-w-2xl flex flex-col items-start space-y-8'>
             <div>
               <p className='font-bold'>Criação do RENOVA BRASIL</p>

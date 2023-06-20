@@ -15,31 +15,14 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 export default function Home() {
-  const [larguraPagina, setLarguraPagina] = useState(0);
-  AOS.init();
   useEffect(() => {
-    setLarguraPagina(window.innerWidth);
-    
-    function handleResize() {
-      setLarguraPagina(window.innerWidth);
-    }
-
-    window.addEventListener('resize', handleResize);
-
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
+    AOS.init();
   }, []);
 
   return (
     <>
       <div className="bg-gray-100">
-      {larguraPagina < 700 ? (
-        <AnimationMobile/>
-      ) : (
-        <Animation/>
-      )}
-      
+      <Animation/>
       <Main/>
       <Trajetoria/>
       <Compromissos/>

@@ -11,7 +11,7 @@ export function Trajetoria() {
     <div className="pb-20 mx-auto max-w-6xl">
       <SlideCompleto/>
       <div className="px-4">
-        <Image src={Abraco} alt="Rafael Prudente abraçando o povo" className="hidden sm:block"/>
+        <Image src={Abraco} alt="Rafael Prudente abraçando o povo" className="hidden sm:block" data-aos="fade-up"/>
         <Image src={AbracoMobile} alt="Rafael Prudente abraçando o povo" className=" sm:hidden w-full"/>
       </div>
     </div>

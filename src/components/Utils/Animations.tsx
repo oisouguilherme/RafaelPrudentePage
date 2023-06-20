@@ -35,7 +35,7 @@ export function Animation() {
   });
 
   return (
-    <div className="banner-main relative">
+    <div className="banner-main relative h-fit">
       <div ref={triggerRef}>
         <Image ref={triggeredElementRef} src={TesteImage} alt="" className="w-full" />
       </div>
