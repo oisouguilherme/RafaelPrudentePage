@@ -8,13 +8,13 @@ export function Main() {
     <div>
       <TitleHeader title="Sobre" />
       <div className="flex gap-8 flex-wrap justify-center lg:justify-between mx-auto max-w-6xl px-4 pt-16">
-        <div className="max-w-md relative">
+        <div className="max-w-md relative" data-aos="fade-right">
           <Image src={SobreImage} alt="Imagem de rafael" />
           <div className="absolute bottom-48 -right-9 hidden md:block">
             <MsgSmile />
           </div>
         </div>
-        <div className="max-w-lg space-y-4">
+        <div className="max-w-lg space-y-4" data-aos="fade-left">
           <p>
             Nascido em Brasília, é filho de pai goiano e mãe pernambucana, é
             casado com Pollyanna Vaz Prudente e tem dois filhos, Rafael e
