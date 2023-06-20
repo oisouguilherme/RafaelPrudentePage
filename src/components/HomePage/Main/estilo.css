@@ -1,0 +1,9 @@
+.bg-image{
+  background-image: url(../../../assets/abraco.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.scroll-hidden::-webkit-scrollbar {
+  display: none;
+}

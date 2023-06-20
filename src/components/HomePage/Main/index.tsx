@@ -3,7 +3,7 @@ import MainBanner from '../../../assets/bannerMain.png'
 import MainBannerMobile from '../../../assets/mainBannerMobile.png'
 import Mission from '../../../assets/mission.png'
 import MissionMobile from '../../../assets/missionMobile.png'
-
+import './estilo.css'
 import Link from "next/link";
 
 import { IconsUtilThreeHearts } from "@/assets/Icons/IconsUtils";
@@ -12,8 +12,14 @@ import { IconsUtilThreeHearts } from "@/assets/Icons/IconsUtils";
 export function Main(){
   return(
     <div className="flex flex-col items-center relative -z-0">
-      <Image src={MainBanner} alt="Banner" className="w-full hidden sm:block"/>
-      <Image src={MainBannerMobile} alt="Banner" className="w-full sm:hidden"/>
+      <div className="bg-image w-full h-screen overflow-scroll scroll-hidden">
+        <div className="w-full h-screen">
+
+        </div>
+        <Image src={MainBanner} alt="Banner" className="w-full hidden sm:block"/>
+        <Image src={MainBannerMobile} alt="Banner" className="w-full sm:hidden"/>
+
+      </div>
 
       <p className="text-laranja-1 text-xl text-center uppercase py-8 sm:py-20">Pai de família, cristão e trabalhador incansável</p>
 
