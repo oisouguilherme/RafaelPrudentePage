@@ -43,10 +43,6 @@ export default function Home() {
       ) : (
         <Animation/>
       )}
-      
-      <Main/>
-      <Trajetoria/>
-      <Compromissos/>
       <RedesSociais/>
       <UltimasNoticas/>
       <Amigos/>

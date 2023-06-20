@@ -42,7 +42,7 @@ export function Header() {
             isOpen ? "translate-x-0" : "translate-x-full"
           }`}
         >
-          <div className="flex flex-col h-screen justify-center gap-8 items-center">
+          <div className="flex flex-col h-screen justify-around items-center">
             <ul className="flex flex-col items-center gap-6 font-bold text-2xl text-[#818181]">
               <li className="cursor-pointer hover:text-laranja-1">
                 <Link onClick={closeMenu} href="/">

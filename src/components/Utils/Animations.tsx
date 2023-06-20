@@ -18,7 +18,7 @@ export function Animation() {
         start: "top top",
         pin: true,
         scrub: true,
-        end: 300,
+        end: 500,
       },
       opacity: 0,
     });
@@ -28,7 +28,7 @@ export function Animation() {
         start: "top top",
         pin: true,
         scrub: true,
-        end: 300,
+        end: 500,
       },
       opacity: 0,
     });
